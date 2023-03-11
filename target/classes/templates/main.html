@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Distance Coaching Manager</title>
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+<table>
+    <thead id="thead">
+    <tr th:replace="~{fragments.html :: logo}" id = "header"></tr>
+    </thead>
+</table>
+<table id = "menu">
+    <tr th:replace="~{fragments.html :: menu}"></tr>
+</table>
+<table  class = "content">
+    <tbody>
+        <tr>
+            <td onclick="location.href='/shop'"  style = "width:25vw" class = "main_content">Sklep</td>
+            <td class = "main_content">Strefa ćwiczącego</td>
+            <td style = "width:25vw" class = "main_content">Strefa trenera</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

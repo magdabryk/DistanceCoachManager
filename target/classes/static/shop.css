@@ -1,0 +1,23 @@
+.header {
+        height: 5vh;
+        background-color: #363636;
+        text-align: center;
+        color: #ff5722;
+        font-size: 22px;
+
+
+}
+
+.content {
+        text-decoration: none;
+        border-collapse: separate;
+        padding: 10vh 10vh;
+}
+
+.product-list {
+    height: 5vh;
+    text-align: center;
+    color: #363636;
+    font-size: 22px;
+
+}

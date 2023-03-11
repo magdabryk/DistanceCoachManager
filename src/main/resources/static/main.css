@@ -1,0 +1,25 @@
+
+
+.content {
+        text-decoration: none;
+        border-collapse: separate;
+        padding: 10vh 10vh;
+        height: 70vh;
+        background-color: #ff5722;
+     }
+
+.main_content {
+    text-decoration: none;
+    border-collapse: separate;
+    border: 3px solid #363636;
+    margin: 10vh 10vh;
+    font-size: 10vh;
+    color: #363636;
+    text-align: center;
+    }
+
+.main_content:hover{
+    background-color: #363636;
+    color: #ff5722;
+    cursor: pointer;
+    }

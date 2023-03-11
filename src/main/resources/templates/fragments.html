@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr id = "header" th:fragment="logo">
+    <td class= "logo">
+        <img src="/logo.png">
+    </td>
+    <td id = "site_name" colspan="4">Distance Coaching Manager</td>
+    <td class = "logo">
+        <img src="/logo.png">
+    </td>
+</tr>
+
+<tr th:fragment="menu">
+    <td onclick="location.href='/main'" class="button">Strona główna</td>
+    <td onclick="location.href='/shop'" class="button">Sklep</td>
+    <td th:if="${sessionObject.isLogged()}" onclick="location.href='/cart'" class="button">Koszyk</td>
+    <td th:if="${sessionObject.isLogged()}" onclick="location.href='/logout'" class="button">Wyloguj</td>
+    <td th:if="${sessionObject.isLogged()}" onclick="location.href='/profil'" class="button">Mój profil</td>
+</tr>
+</body>
+</html>

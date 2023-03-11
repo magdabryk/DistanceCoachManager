@@ -1,0 +1,58 @@
+/*
+#ff5722 - pomarańczowy
+#363636 - szary*/
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   }
+
+#thead {
+    height: 20vh;
+    border-collapse: collapse;
+    background-color: #ff5722;
+}
+
+#menu {
+background-color: #ff5722;
+}
+
+.logo {
+    width: 20vh;
+}
+
+.logo img {
+    height: 20vh;
+}
+
+#site_name {
+    text-align: center;
+    font-size: 10vh
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    color: #ff5722;
+    font-size: 22px;
+    margin: 0 10px;
+    /*border: 2px solid #363636;*/
+    border-radius: 10px;
+    padding: 2px 15px;
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+
+    cursor: pointer;
+    background-color: #363636;
+}
+
+.button:hover {
+    background-color: #ff5722;
+    color: #363636;
+
+}
+
+
