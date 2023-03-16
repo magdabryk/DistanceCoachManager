@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Distance Coaching Manager</title>
+  <link rel="stylesheet" href="/common.css">
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<table>
+  <thead id="thead">
+  <tr th:replace="~{fragments.html :: logo}" id = "header"></tr>
+  </thead>
+</table>
+<table id = "menu">
+  <tr th:replace="~{fragments.html :: menu}"></tr>
+  <table style="background-color: #ff5722;" class="content">
+    <tbody>
+    <tr class="header">
+      <td> Nazwa</td>
+      <td> Czas trwania (w tyg)</td>
+      <td> Cena</td>
+      <td>Trener</td>
+      <td>Ilość</td>
+      <td>Suma</td>
+
+    </tr>
+    <<!--tr class="product-list" th:each="trainingPlan : ${trainingsPlan}">
+      <td th:text="${trainingPlan.name}"></td>
+      <td th:text="${trainingPlan.duration}"></td>
+      <td th:text="${trainingPlan.price}"></td>
+      <td th:text="${trainingPlan.getCoach().getName()}"></td>
+      <td th:if="${!sessionObject.isLogged()}" onclick="location.href='/login'" class="button">Zaloguj</td>
+      <td th:if="${sessionObject.isLogged()}" onclick="location.href='@{/cart/add/{id}(id=${trainingPlan.id})}" class="button"> Dodaj do koszyka</td>-->
+    <tr>
+
+
+    </tbody>
+  </table>
+</body>
+</html>

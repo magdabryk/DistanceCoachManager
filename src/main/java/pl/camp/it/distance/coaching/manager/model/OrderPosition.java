@@ -17,4 +17,13 @@ public class OrderPosition {
     @OneToOne(fetch = FetchType.EAGER)
     private TrainingPlan trainingPlan;
     private int amount;
+
+    public OrderPosition(TrainingPlan trainingPlan, int amount) {
+        this.trainingPlan = trainingPlan;
+        this.amount = amount;
+    }
+
+    public void increamentAmount() {
+        this.amount++;
+    }
 }

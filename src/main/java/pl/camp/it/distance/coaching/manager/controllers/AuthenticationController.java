@@ -39,7 +39,7 @@ public class AuthenticationController {
         if(!this.sessionObject.isLogged()){
             return "redirect:/login";
         }
-        return "redirect:/main";
+        return "redirect:/shop";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)

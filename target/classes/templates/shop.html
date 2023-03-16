@@ -22,6 +22,7 @@
             <td> Nazwa</td>
             <td> Czas trwania (w tyg)</td>
             <td> Cena</td>
+            <td> Ilość</td>
             <td>Trener</td>
 
         </tr>
@@ -29,12 +30,11 @@
             <td th:text="${trainingPlan.name}"></td>
             <td th:text="${trainingPlan.duration}"></td>
             <td th:text="${trainingPlan.price}"></td>
-            <td th:text="${trainingPlan.getCoach().getName()}"></td>
+            <td th:text="${trainingPlan.quantity}"></td>
+            <td th:text="${trainingPlan.getCoach().getName()} + ' '  + ${trainingPlan.getCoach().getSurame()}"></td>
             <td th:if="${!sessionObject.isLogged()}" onclick="location.href='/login'" class="button">Zaloguj</td>
-            <td th:if="${sessionObject.isLogged()}" class="button"> Dodaj do koszyka</td>
+            <td th:if="${sessionObject.isLogged()}" onclick="location.href='@{/cart/add/{id}(id=${trainingPlan.id})}" class="button"> Dodaj do koszyka</td>
         <tr>
-
-
         </tbody>
     </table>
 

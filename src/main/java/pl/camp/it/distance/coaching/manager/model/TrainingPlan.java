@@ -23,5 +23,6 @@ public class TrainingPlan {
     private double price;
     @ManyToOne(fetch = FetchType.EAGER)
     private Coach coach;
+    private int quantity;
 
 }
